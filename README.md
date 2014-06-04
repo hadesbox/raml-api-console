@@ -41,11 +41,11 @@ This follows the same procedure as the official API Console.
 
  
 Remember to change the proxy settings in app/scripts/directives/raml_console_initializer.js
- ´´´
+```
  $scope.consoleLoader.location = 'http://localhost:10000/' + api;
-´´´
+```
  
  and app/scripts/settings.js
- ´´´
+```
  'RAML.Settings.proxy = 'http://localhost:10000/?proxy=';
-´´´
+```
