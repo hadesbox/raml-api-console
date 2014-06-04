@@ -13,9 +13,11 @@ function stripFontPathPrefix(connect) {
   return function(req, res, next) {
     var pathname = connect.utils.parseUrl(req).pathname;
     var fontPrefix = '/font';
+/*
     if (pathname.slice(0, fontPrefix.length) === fontPrefix) {
       req.url = req.url.slice(fontPrefix.length);
     }
+*/
     next();
   };
 }
@@ -24,6 +26,8 @@ module.exports = function (grunt) {
   // load all grunt tasks
   require('load-grunt-tasks')(grunt);
   require('./tasks/protractor')(grunt);
+
+  grunt.loadNpmTasks('grunt-forever');
 
   // configurable paths
   var yeomanConfig = {
@@ -339,4 +343,5 @@ module.exports = function (grunt) {
     'test',
     'build'
   ]);
+
 };
