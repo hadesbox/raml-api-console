@@ -10,4 +10,5 @@
   RAML.Settings.oauth1RedirectUri = RAML.Settings.oauth1RedirectUri || uri.replace(/oauth2\.html$/, 'oauth1.html');
 
   // RAML.Settings.proxy = RAML.Settings.proxy || '/proxy/';
+  RAML.Settings.proxy = "http://54.247.108.54:10000/?proxy=";
 })();
