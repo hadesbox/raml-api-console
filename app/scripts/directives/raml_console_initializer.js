@@ -27,7 +27,7 @@
       var init = function () {
           var api = getVarFromURL("api");
           if(api != null){
-            $scope.consoleLoader.location = "http://localhost:10000/" + api;
+            $scope.consoleLoader.location = "http://54.247.108.54:10000/" + api;
             $scope.consoleLoader.load();
           }
       };
