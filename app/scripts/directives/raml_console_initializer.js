@@ -10,26 +10,26 @@
         url = url.substring(url.indexOf('?'));
         var urlLowerCase = url.toLowerCase();
         varName = varName.toLowerCase();
-        if (urlLowerCase.indexOf(varName + "=") != -1) {
+        if (urlLowerCase.indexOf(varName + '=') !== -1) {
           var value = url.substring(urlLowerCase.indexOf(varName) + varName.length + 1);
-          if (value.indexOf('&') != -1) {
+          if (value.indexOf('&') !== -1) {
             value = value.substring(0, value.indexOf('&'));
           }
-          console.log("return some >" , value, "<");
+          //console.log('return some >' , value, '<');
           return value;
         }
         else {
-          console.log("return null;")
+          //console.log('return null;')
           return null;
         }
-      }      
+      }
 
       var init = function () {
-          var api = getVarFromURL("api");
-          if(api != null){
-            $scope.consoleLoader.location = "http://54.247.108.54:10000/" + api;
-            $scope.consoleLoader.load();
-          }
+        var api = getVarFromURL('api');
+        if(api !== null){
+          $scope.consoleLoader.location = 'http://localhost:10000/' + api;
+          $scope.consoleLoader.load();
+        }
       };
 
       init();

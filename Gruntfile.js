@@ -11,9 +11,9 @@ function mountFolder(connect, dir) {
 
 function stripFontPathPrefix(connect) {
   return function(req, res, next) {
+/*    
     var pathname = connect.utils.parseUrl(req).pathname;
     var fontPrefix = '/font';
-/*
     if (pathname.slice(0, fontPrefix.length) === fontPrefix) {
       req.url = req.url.slice(fontPrefix.length);
     }
