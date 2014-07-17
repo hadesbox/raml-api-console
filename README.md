@@ -47,5 +47,5 @@ Remember to change the proxy settings in app/scripts/directives/raml_console_ini
  
  and app/scripts/settings.js
 ```
- 'RAML.Settings.proxy = 'http://localhost:10000/?proxy=';
+ 'RAML.Settings.proxy = 'http://localhost:10000/proxy/';
 ```
